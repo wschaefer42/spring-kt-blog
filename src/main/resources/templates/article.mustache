@@ -1,0 +1,32 @@
+{{> header}}
+
+<h1>Article of {{title}}</h1>
+<form>
+    <div class="grid-container">
+        <div class="grid-item">
+            <label for="title">Title</label>
+        </div>
+        <div class="grid-item">
+            <input type="text" value="{{article.title}}" name="title" id="title">
+        </div>
+        <div class="grid-item">
+            <label for="headline">Headline</label>
+        </div>
+        <div class="grid-item">
+            <input type="text" value="{{article.headline}}" name="headline" id="headline">
+        </div>
+        <div class="grid-item">
+            <label for="content">Content</label>
+        </div>
+        <div class="grid-item">
+            <textarea name="content" id="content">
+                {{article.content}}
+            </textarea>
+        </div>
+        <div class="grid-item-2">
+            <input type="submit" value="Save">
+        </div>
+    </div>
+</form>
+
+{{> footer}}
